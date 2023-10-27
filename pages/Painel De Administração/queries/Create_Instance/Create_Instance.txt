@@ -1,0 +1,4 @@
+{
+	"instanceName": {{InputNomeNovaInstancia.text}},
+	"qrcode": true,
+}

@@ -1,0 +1,9 @@
+{
+		"enabled": {{SwitchHabilitarChatwoot.isSwitchedOn || false}},
+		"account_id": {{InputChatwootContaId.text}},
+    "token": {{InputChatwootToken.text}},
+    "url": {{InputChatwootUrl.text}},
+    "sign_msg": {{SwitchChatwootMensageEntrada.isSwitchedOn || false}},
+    "reopen_conversation": {{SwitchChatwootReabrirConversa.isSwitchedOn || false}},
+    "conversation_pending": {{SwitchChatwootConversaPendente.isSwitchedOn || false}}
+}

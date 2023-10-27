@@ -1,0 +1,10 @@
+{
+		"enabled": {{SwitchHabilitarTypebot.isSwitchedOn || false}},
+		"url": {{InputUrlTypebot.text}},
+		"typebot": {{InputTypebot.text}},
+		"expire": {{InputSessaoExpira.text}},
+		"keyword_finish": {{InputPalavraChave.text}},
+		"delay_message": {{InputTempoEspera.text}},
+		"unknown_message": {{InputMensgemInvalida.text}},
+		"listening_from_me": {{SwitchResponderse.isSwitchedOn || false}}
+}

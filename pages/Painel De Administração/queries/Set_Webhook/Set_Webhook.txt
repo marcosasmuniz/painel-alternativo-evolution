@@ -1,0 +1,6 @@
+{
+		"url": {{InputUrlWebhook.text}},
+		"enabled": {{SwitchHabilitarWebhook.isSwitchedOn || false}},
+    "webhook_by_events": {{SwitchHabilitarEventos.isSwitchedOn || false}},
+    "events": {{MultiSelectEventos.selectedOptionValues}}
+}

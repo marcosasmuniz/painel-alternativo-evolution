@@ -1,0 +1,69 @@
+{
+  "pages": [
+    {
+      "id": "Painel De Administração",
+      "isDefault": false
+    },
+    {
+      "id": "Acesso Administração",
+      "isDefault": true
+    },
+    {
+      "id": "Painel Para Clientes",
+      "isDefault": false
+    },
+    {
+      "id": "Acesso Clientes",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": false,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": true
+    }
+  },
+  "publishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": false,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": true
+    }
+  },
+  "color": "#F1DEFF",
+  "icon": "chat",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": false
+  },
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

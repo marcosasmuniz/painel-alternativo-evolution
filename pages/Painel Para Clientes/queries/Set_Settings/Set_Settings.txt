@@ -1,0 +1,8 @@
+{
+		"reject_call": {{SwitchRejeitarChamadas.isSwitchedOn || false}},
+    "msg_call": {{InputAvisoChamadas.text}},
+    "groups_ignore": {{SwitchReponderGrupos.isSwitchedOn || false}},
+    "always_online": {{SwitchMostrarOnline.isSwitchedOn || false}},
+    "read_messages": {{SwitchMensagensLidas.isSwitchedOn || false}},
+    "read_status": {{SwitchStatusLeitura.isSwitchedOn || false}}
+}

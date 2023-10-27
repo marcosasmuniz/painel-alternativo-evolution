@@ -1,0 +1,466 @@
+{
+  "unpublishedPage": {
+    "name": "Acesso Clientes",
+    "slug": "acesso-clientes",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 380,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 78,
+          "minHeight": 830,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "mobileBottomRow": 46,
+              "widgetName": "ModalAcessoPainelClientes",
+              "isCanvas": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
+              "searchTags": [
+                "dialog",
+                "popup",
+                "notification"
+              ],
+              "topRow": 1,
+              "bottomRow": 411,
+              "parentRowSpace": 10,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "mobileRightColumn": 42,
+              "minHeight": 240,
+              "animateLoading": true,
+              "parentColumnSpace": 19.90625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 18,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "children": [
+                {
+                  "mobileBottomRow": 240,
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 410,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 270,
+                  "mobileRightColumn": 477.75,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "mobileBottomRow": 5,
+                      "widgetName": "TextTituloModalAcessoAdmin",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 6,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "mobileRightColumn": 41,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "Acessar Painel De Conexão",
+                      "key": "emsiox6h96",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "backgroundColor": "#71717a",
+                      "textAlign": "CENTER",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "wlkc0smfs4",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#fafafa",
+                      "version": 1,
+                      "parentId": "8meqf72shp",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "mobileTopRow": 1,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "mobileLeftColumn": 1,
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "1.25rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "mobileBottomRow": 22,
+                      "widgetName": "BtnAcessoAdmin",
+                      "onClick": "{{storeValue('api_url', InputApiUrl.text);\nstoreValue('api_global_key_cliente', InputGlobalKey.text);\nstoreValue('api_key_cliente', InputKeyCliente.text);\ncloseModal('ModalAcessoPainelClientes');\nnavigateTo('Painel Para Clientes', {}, 'SAME_WINDOW');}}",
+                      "buttonColor": "#15803d",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 35,
+                      "bottomRow": 39,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "mobileRightColumn": 63,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 31,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
+                      "text": "Acessar Área Do Cliente",
+                      "isDisabled": "{{InputApiUrl.text == ''  || InputKeyCliente.text == '' || InputGlobalKey.text == ''}}",
+                      "key": "kxnw7dgq67",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "isDefaultClickDisabled": true,
+                      "iconName": "person",
+                      "widgetId": "k0yblmc6pn",
+                      "buttonStyle": "PRIMARY_BUTTON",
+                      "minWidth": 120,
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "8meqf72shp",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "mobileTopRow": 18,
+                      "responsiveBehavior": "hug",
+                      "originalTopRow": 18,
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "mobileLeftColumn": 47,
+                      "originalBottomRow": 22,
+                      "buttonVariant": "PRIMARY",
+                      "iconAlign": "left",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "topRow": 6,
+                      "labelWidth": 5,
+                      "type": "INPUT_WIDGET_V2",
+                      "animateLoading": true,
+                      "resetOnSubmit": true,
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "PASSWORD",
+                      "isDisabled": false,
+                      "isRequired": true,
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
+                      "isVisible": false,
+                      "version": 2,
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 11,
+                      "mobileBottomRow": 13,
+                      "widgetName": "InputApiUrl",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "mobileRightColumn": 21,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "key": "2lnv9a0b7v",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "widgetId": "jxsh3t37cv",
+                      "minWidth": 450,
+                      "label": "Endereço Da API - URL (sem / no final)",
+                      "parentId": "8meqf72shp",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "mobileTopRow": 6,
+                      "responsiveBehavior": "fill",
+                      "originalTopRow": 4,
+                      "mobileLeftColumn": 1,
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "https://linkdatuaevolutionapi",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "topRow": 24,
+                      "labelWidth": 5,
+                      "type": "INPUT_WIDGET_V2",
+                      "animateLoading": true,
+                      "resetOnSubmit": true,
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "PASSWORD",
+                      "isDisabled": false,
+                      "isRequired": true,
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
+                      "isVisible": true,
+                      "version": 2,
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 18,
+                      "mobileBottomRow": 18,
+                      "widgetName": "InputKeyCliente",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 31,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "mobileRightColumn": 20,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "key": "2lnv9a0b7v",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "widgetId": "hvf39v8adr",
+                      "minWidth": 450,
+                      "label": "Chave Fornecida Pelo Gestor",
+                      "parentId": "8meqf72shp",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "mobileTopRow": 11,
+                      "responsiveBehavior": "fill",
+                      "originalTopRow": 11,
+                      "mobileLeftColumn": 0,
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "{{appsmith.store.api_key_cliente || ''}}",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "topRow": 13,
+                      "labelWidth": 5,
+                      "type": "INPUT_WIDGET_V2",
+                      "animateLoading": true,
+                      "resetOnSubmit": true,
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "PASSWORD",
+                      "isDisabled": false,
+                      "isRequired": true,
+                      "dynamicHeight": "FIXED",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
+                      "isVisible": false,
+                      "version": 2,
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 18,
+                      "mobileBottomRow": 18,
+                      "widgetName": "InputGlobalKey",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 20,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "mobileRightColumn": 20,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "key": "2lnv9a0b7v",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "widgetId": "zlydr1bgwg",
+                      "minWidth": 450,
+                      "label": "Authentication API Key - Global API Key",
+                      "parentId": "8meqf72shp",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "mobileTopRow": 11,
+                      "responsiveBehavior": "fill",
+                      "originalTopRow": 11,
+                      "mobileLeftColumn": 0,
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "tua-global-key-aqui",
+                      "minDynamicHeight": 4
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "40i1q0ptkh",
+                  "isDeprecated": false,
+                  "rightColumn": 477.75,
+                  "detachFromLayout": true,
+                  "widgetId": "8meqf72shp",
+                  "minWidth": 450,
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "5jlksj8gj5",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "mobileTopRow": 0,
+                  "responsiveBehavior": "fill",
+                  "mobileLeftColumn": 0,
+                  "flexLayers": []
+                }
+              ],
+              "key": "dv3law3w54",
+              "height": 410,
+              "isDeprecated": false,
+              "rightColumn": 42,
+              "detachFromLayout": true,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "5jlksj8gj5",
+              "canOutsideClickClose": false,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 22,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 18,
+              "maxDynamicHeight": 9000,
+              "width": 602,
+              "minDynamicHeight": 24
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Acesso Clientes_JSObject1.verifyConfig",
+              "name": "JSObject1.verifyConfig",
+              "collectionId": "Acesso Clientes_JSObject1",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  const api_url = await appsmith.store.api_url;\n  const api_global_key_cliente = await appsmith.store.api_global_key_cliente;\n  const api_key_cliente = await appsmith.store.api_key_cliente;\n  if (!api_url || !api_global_key_cliente || !api_key_cliente) {\n    showModal('ModalAcessoPainelClientes');\n  } else {\n    navigateTo(\"Painel Para Clientes\", \"SAME_WINDOW\");\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Acesso Clientes",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6538709bfd943a7ce8b7f7b3_6539cf79fd943a7ce8b7f80c"
+}
